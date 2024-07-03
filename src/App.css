@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+*{
+    font-family: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --bs-color1: rgb(20, 127, 225);
+    --bs-color2: rgb(250, 109, 24);
 }
+.color1{
+    color: var(--bs-color1);
+}
+.color2{
+    color: var(--bs-color2);
+}
+.bg-color1{
+    background: var(--bs-color1);
+}
+.bg-color2{
+    background: var(--bs-color2);
+}
+/* Header */
+#header{
+    z-index: 3;
+}
+.logo{
+    width: 80%;
+}
+.logo2{
+    width: 30%;
+}
+.fa-search:hover, .fa-heart:hover, .fa-shopping-bag:hover, .fa-user:hover, .item1:hover{
+    color: var(--bs-color2);
+}
+/* Header */
+/* Banner */
+#discover{
+    height: 50vh;
+    width: 92%;
+    background: url(Images/banner1.jpg) center;
+    background-size: cover;
+}
+h3:hover, h5:hover{
+    color: var(--bs-color2);
+}
+/* Banner */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
